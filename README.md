@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Lovast Development Team
+-------------------------------------------------------------------
+## Our Goal
+We strive to develop the best apps, websites, and software possible. Our goal is to give our users
+the most unique experience possible. This includes usability for anyone, and everyone. A user interface
+that allows you to seemlessly interact with our projects.
 
-You can use the [editor on GitHub](https://github.com/chasehoff/Lovast_DevTeam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Our Projects
+- Hook Up (Work in progress)
+- Lovast Stock Market Simulator (Work in progress)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+-------------------------------------------------------------------
+## Social Media
+[Discord](https://discord.gg/UDhAcS)
 
-### Markdown
+[Instagram](https://www.instagram.com/those_one_devs/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Website](https://lovast.com/)
 
-```markdown
-Syntax highlighted code block
+-------------------------------------------------------------------
+## Our Team
+- Steven Moctezuma
+    - [Instagram](https://www.instagram.com/steven_aztec/)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chasehoff/Lovast_DevTeam/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Chase Hoffman
+    - [Instagram](https://www.instagram.com/hoff_chas/)
