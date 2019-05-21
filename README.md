@@ -1,5 +1,4 @@
 # Lovast Development Team
--------------------------------------------------------------------
 ## Our Goal
 We strive to develop the best apps, websites, and software possible. Our goal is to give our users
 the most unique experience possible. This includes usability for anyone, and everyone. A user interface
@@ -9,7 +8,6 @@ that allows you to seemlessly interact with our projects.
 - Hook Up (Work in progress)
 - Lovast Stock Market Simulator (Work in progress)
 
--------------------------------------------------------------------
 ## Social Media
 [Discord](https://discord.gg/UDhAcS)
 
@@ -17,7 +15,7 @@ that allows you to seemlessly interact with our projects.
 
 [Website](https://lovast.com/)
 
--------------------------------------------------------------------
+
 ## Our Team
 - Steven Moctezuma
     - [Instagram](https://www.instagram.com/steven_aztec/)
