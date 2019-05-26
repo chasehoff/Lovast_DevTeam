@@ -15,7 +15,6 @@ that allows you to seemlessly interact with our projects.
 
 [Website](https://lovast.com/)
 
-
 ## Our Team
 - Steven Moctezuma
     - [Instagram](https://www.instagram.com/steven_aztec/)
