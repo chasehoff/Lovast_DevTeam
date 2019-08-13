@@ -1,0 +1,486 @@
+body {
+    font-family: agenda, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    overflow-x: hidden;
+}
+p {
+    color: #B5AFAF;
+}
+
+
+/* NavBar Section */
+/*                */
+/*                */
+/*                */
+/*                */
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+.navbar-default .navbar-brand {
+      top:0;
+}
+  
+/* DEMO example styles for logo image */
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 150%;
+    width: auto;
+    /*padding: 7px 14px; Looks smaller for odd reason*/
+}
+.navbar {
+    background-color: #2B2828;
+    margin-bottom: 0px; /* Fixes awkward space under navbar*/
+}
+
+
+/* Work in progress 
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #777;
+    border-bottom: solid #425990;
+}
+.navbar-nav {
+    padding-top: 0;
+    margin-top: 15px;
+}*/
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: #2B2828;
+    border-radius: 50%;
+    top: -1.5rem;
+    left: -.75rem;
+    position: absolute;
+    z-index: -1;
+}
+#circle-border {
+    width: 102px;
+    height: 102px;
+    background: white;
+    border-radius: 50%;
+    top: -1.5rem;
+    left: -.80rem;
+    position: absolute;
+    z-index: -1;
+}
+#rect {
+    width: 105px;
+    height: 100px;
+    background: #2B2828;
+    bottom:0rem;
+    position: absolute;
+    z-index: -1;
+    left:-1rem;
+}
+
+/* Carousel Section */
+/*                  */
+/*                  */
+/*                  */
+/*                  */
+.splashPage {
+    max-height: 100vh;
+    overflow: hidden;
+}
+#myCarousel {
+    z-index: 0;
+}
+.carousel-inner {
+    z-index: 0;
+    height: 70vh;
+}
+.carousel-inner::before {
+    content: "";
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#overlay::before {
+    background: rgba(0, 0, 0, 0.50);
+}
+.splashContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10rem auto 10rem auto;
+    z-index: 1;
+}
+.splashContent h1 {
+    color:white;
+    font-weight: unset;
+}
+.splashContent p {
+    color: white;
+    font-size: 1.2rem;
+    color: #B5AFAF;
+}
+.title {
+    font-size: 3rem !important;
+}
+.signupQuick {
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+}
+.signupContent {
+    margin: 2rem;
+}
+.signupContent h1 {
+    font-size: 2.4rem;
+}
+.signupContent p {
+    font-size: 1.2rem;
+    color: #B5AFAF;
+}
+.image-fit {
+    height: auto; /* Make sure images are scaled correctly. */
+    width: 100%; /* Adhere to container width. */
+    display:block;
+}
+
+/* About Section    */
+/*                  */
+/*                  */
+/*                  */
+/*                  */
+.about-us {
+    background-color: #2B2828;
+}
+.section-header-right {
+    position: absolute;
+    top: -3.9rem;
+    right: 0rem;
+    color: white; 
+    z-index: 2;
+    white-space: nowrap;
+    background-color: #2B2828;
+    padding-right: 4rem;
+    padding-left: 7rem; /*TODO: Edit this later! adjust positioning of about us text*/
+}
+.section-header-right h1 {
+    margin: 0 0rem 0 0; /*background color about us extention*/
+}
+.section-header-right::before {
+    content: '';
+    position: absolute;
+    left: -4rem;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #2B2828;
+    border-left: 40px solid transparent;
+}
+.about-msg {
+}
+.image-const {
+    width: 280px;
+    height: 240px !important;
+}
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.vertical-indicators{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:20px;
+    right:10px; left:auto;
+    width:auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/*------------------------------ vertical bootstrap slider----------------------------*/
+.vertical .carousel-inner {
+    height: 100%;
+  }
+  
+  .carousel.vertical .item {
+     -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+     -ms-transition: 0.6s ease-in-out top;
+     -o-transition: 0.6s ease-in-out top;
+     transition: 0.6s ease-in-out top;
+  }
+  
+  .carousel.vertical .active {
+     top: 0;
+  }
+  
+  .carousel.vertical .next {
+     top: 400px;
+  }
+  
+  .carousel.vertical .prev {
+     top: -400px;
+  }
+  
+  .carousel.vertical .next.left,
+  .carousel.vertical .prev.right {
+     top: 0;
+  }
+  
+  .carousel.vertical .active.left {
+     top: -400px;
+  }
+  
+  .carousel.vertical .active.right {
+     top: 400px;
+  }
+  
+  .carousel.vertical .item {
+     left: 0;
+  }
+
+
+  .location {
+      background-color: white;
+  }
+
+/* location section */
+/*                  */
+/*                  */
+/*                  */
+/*                  */
+/*                  */
+/*                  */
+
+.section-header-left {
+    position: absolute;
+    top: -3.9rem; 
+    color: white; 
+    z-index: 2;
+    white-space: nowrap;
+    background-color: white;
+    padding-left: 4rem; /*TODO: Edit this later! adjust positioning of about us text*/
+}
+.section-header-left h1 {
+    margin: 0 5vw 0 0; /*background color about us extention*/
+}
+.section-header-left::after {
+    content: '';
+    position: absolute;
+    display: inline;
+    bottom: 0rem;
+    right: -4rem;
+    border-bottom: 40px solid white;
+    border-right: 40px solid transparent;
+}
+
+/* Upcoming Events */
+/*                 */
+/*                 */
+/*                 */
+/*                 */
+/*                 */
+.upcoming-events {
+    background: #425990;
+    border-radius: 1.1rem;
+    margin: 4rem 2rem 0 2rem;
+}
+
+.upcoming-events img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+.upcoming-date {
+    position: relative;
+    float: right;
+}
+.upcoming-title {
+    position: relative;
+}
+.upcoming-title::after {
+    content:""; 
+    background: #B5AFAF; 
+    position: absolute; 
+    bottom: -.5rem;
+    left: 7%;
+    height: 5px; 
+    width: 85%;
+    border-radius: 1rem;
+}
+.upcoming-title h1 {
+    color: #B5AFAF;
+    margin: 1rem 0 0 0;
+}
+.upcoming-title p {
+
+}
+
+/*      Footer     */
+/*                 */
+/*                 */
+/*                 */
+/*                 */
+/*                 */
+footer {
+    text-align: center;
+}
+.footer {
+    display: inline-block;
+    margin:0;
+    padding: 2rem 0 2rem 0;
+}
+.footer p {
+    margin: 0;
+    display: inline;
+}
+.footer a {
+    color: #B5AFAF;
+}
+.footer a:hover {
+    text-decoration: none;
+}
+
+
+/* button Section */
+/*                */
+/*                */
+/*                */
+/*                */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button.sandy-one {
+	border: 2px solid #AEA8D3;
+    color: #FFF;
+    border-radius: 10px;
+}
+a.animated-button.sandy-one:after {
+	border: 3px solid #AEA8D3;
+	opacity: 0;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	
+}
+a.animated-button.sandy-one:hover:after {
+	height: 120% !important;
+	opacity: 1;
+	color: #FFF;
+}
+a.animated-button.sandy-two {
+	border: 2px solid #AEA8D3;
+	color: #FFF;
+}
+a.animated-button.sandy-two:after {
+	border: 3px solid #AEA8D3;
+	opacity: 0;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.sandy-two:hover:after {
+	height: 600% !important;
+	opacity: 1;
+	color: #FFF;
+}
+a.animated-button.sandy-three {
+	border: 2px solid #AEA8D3;
+	color: #FFF;
+}
+a.animated-button.sandy-three:after {
+	border: 3px solid #AEA8D3;
+	opacity: 0;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.sandy-three:hover:after {
+	height: 400% !important;
+	opacity: 1;
+	color: #FFF;
+}
+a.animated-button.sandy-four {
+	border: 2px solid #AEA8D3;
+	color: #FFF;
+}
+a.animated-button.sandy-four:after {
+	border: 3px solid #425990;
+	opacity: 0;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+	transform: translateY(-50%) translateX(-50%) rotate(25deg);
+}
+a.animated-button.sandy-four:hover:after {
+	height: 400% !important;
+	opacity: 1;
+	color: #FFF;
+}
