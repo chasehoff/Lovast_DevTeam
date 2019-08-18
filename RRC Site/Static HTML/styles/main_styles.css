@@ -36,9 +36,24 @@ p {
     background-color: #2B2828;
     margin-bottom: 0px; /* Fixes awkward space under navbar*/
 }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: inherit;
+    color: #777;
+}
+#magic-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background: #425990;
+  }
+  
 
+/* Work in progress
 
-/* Work in progress 
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    border-bottom: 1px solid yellow;
+}
+
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     color: #777;
     border-bottom: solid #425990;
@@ -415,12 +430,12 @@ a.animated-button:link, a.animated-button:visited {
 }
 
 a.animated-button.sandy-one {
-	border: 2px solid #AEA8D3;
+	border: 2px solid white;
     color: #FFF;
     border-radius: 10px;
 }
 a.animated-button.sandy-one:after {
-	border: 3px solid #AEA8D3;
+	border: 3px solid white;
 	opacity: 0;
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
@@ -451,11 +466,11 @@ a.animated-button.sandy-two:hover:after {
 	color: #FFF;
 }
 a.animated-button.sandy-three {
-	border: 2px solid #AEA8D3;
+	border: 2px solid white;
 	color: #FFF;
 }
 a.animated-button.sandy-three:after {
-	border: 3px solid #AEA8D3;
+	border: 3px solid white;
 	opacity: 0;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -468,11 +483,11 @@ a.animated-button.sandy-three:hover:after {
 	color: #FFF;
 }
 a.animated-button.sandy-four {
-	border: 2px solid #AEA8D3;
+	border: 2px solid white;
 	color: #FFF;
 }
 a.animated-button.sandy-four:after {
-	border: 3px solid #425990;
+	border: 3px solid white;
 	opacity: 0;
 	-moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
 	-ms-transform: translateY(-50%) translateX(-50%) rotate(25deg);
@@ -483,4 +498,100 @@ a.animated-button.sandy-four:hover:after {
 	height: 400% !important;
 	opacity: 1;
 	color: #FFF;
+}
+
+/* Form style Section */
+/*                    */
+/*                    */
+/*                    */
+/*                    */
+.group { 
+    position: relative; 
+    margin-bottom: 25px; 
+  }
+  
+  input {
+    font-size: 13px;
+    /*height: 25px; Work around from original*/
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background: rgba(0,0,0,0);
+    opacity: 0.5;
+    transition: 0.2s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    opacity: 1;
+  }
+  
+  label {
+    color: white; 
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    opacity: 0.5;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top: -10px;
+    font-size: 12px;
+    color: white;
+    opacity: 1;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:white; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:white; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:white; }
+    to 	{ width:0; background:transparent; }
+  }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .phone-hide {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .IP {
+        display: none;
+    }
 }
