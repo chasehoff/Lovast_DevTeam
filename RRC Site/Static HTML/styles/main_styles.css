@@ -595,3 +595,8 @@ a.animated-button.sandy-four:hover:after {
         display: none;
     }
 }
+
+/* blog */
+.widget-wrap .search-widget form.search-form input[type="text"] {
+    background-color: #e1e0e0;
+}
